@@ -1,9 +1,9 @@
 package adapter.meteo;
 
 interface SensorTemperature{
-    int identifier(); // идентификатор датчика
-    double temperature(); // температура датчика
-    int year();			 // Год
-    int day();			 // День года
-    int second();		 // Секунда дня
+    int identifier(); // РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РґР°С‚С‡РёРєР°
+    double temperature(); // С‚РµРјРїРµСЂР°С‚СѓСЂР° РґР°С‚С‡РёРєР°
+    int year();			 // Р“РѕРґ
+    int day();			 // Р”РµРЅСЊ РіРѕРґР°
+    int second();		 // РЎРµРєСѓРЅРґР° РґРЅСЏ
 }

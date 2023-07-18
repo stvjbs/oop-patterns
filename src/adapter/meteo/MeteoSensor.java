@@ -3,13 +3,13 @@ package adapter.meteo;
 import java.time.LocalDateTime;
 
 interface MeteoSensor {
-    int getId(); // идентификатор датчика
+    int getId(); // РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РґР°С‚С‡РёРєР°
 
-    Float getTemperature(); // температура датчика
+    Float getTemperature(); // С‚РµРјРїРµСЂР°С‚СѓСЂР° РґР°С‚С‡РёРєР°
 
-    Float getHumidity(); // влажность
+    Float getHumidity(); // РІР»Р°Р¶РЅРѕСЃС‚СЊ
 
-    Float getPressure(); // давление
+    Float getPressure(); // РґР°РІР»РµРЅРёРµ
 
-    LocalDateTime getDateTime(); // время чтения данных датчика
+    LocalDateTime getDateTime(); // РІСЂРµРјСЏ С‡С‚РµРЅРёСЏ РґР°РЅРЅС‹С… РґР°С‚С‡РёРєР°
 }

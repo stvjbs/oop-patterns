@@ -1,6 +1,6 @@
 package decorator.factory.calculator;
 
-// Создать логирование операций, для класса Calculator. Класс Calculator не должен изменится.
+// РЎРѕР·РґР°С‚СЊ Р»РѕРіРёСЂРѕРІР°РЅРёРµ РѕРїРµСЂР°С†РёР№, РґР»СЏ РєР»Р°СЃСЃР° Calculator. РљР»Р°СЃСЃ Calculator РЅРµ РґРѕР»Р¶РµРЅ РёР·РјРµРЅРёС‚СЃСЏ.
 public class Main {
     public static void main(String[] args) {
         ICalculableFactory calculableFactory = new CalculableFactory();

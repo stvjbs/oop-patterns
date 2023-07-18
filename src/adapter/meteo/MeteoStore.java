@@ -1,7 +1,7 @@
 package adapter.meteo;
 
 class MeteoStore {
-    // сохранение данных в базу
+    // СЃРѕС…СЂР°РЅРµРЅРёРµ РґР°РЅРЅС‹С… РІ Р±Р°Р·Сѓ
     boolean save(MeteoSensor meteoSensor) {
         System.out.format("Saving data from sensor [%d] at %s%n temperature - %f ; humidity - %f ; pressure - %f \n\r",
                 meteoSensor.getId(),
