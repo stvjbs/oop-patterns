@@ -9,6 +9,8 @@ public class Main {
         Company geekBrains = new Company(jobAgency, "GeekBrains", 100);
         Student petrov = new Student("Petrov");
         Master ivanov = new Master("Ivanov");
+        Specialist specialist = new Specialist("Specialistov");
+        jobAgency.registerObserver(specialist);
         jobAgency.registerObserver(petrov);
         jobAgency.registerObserver(ivanov);
 
