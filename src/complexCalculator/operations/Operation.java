@@ -6,8 +6,8 @@ public class Operation implements Operatable {
     double a;
     double b;
     ComplexNumber cxResult;
-
-    public ComplexNumber getCxResult() {
+    @Override
+    public ComplexNumber getResult() {
         return cxResult;
     }
 
@@ -42,4 +42,5 @@ public class Operation implements Operatable {
         cxResult = new ComplexNumber(a, b);
         return cxResult;
     }
+
 }
