@@ -1,5 +1,4 @@
 package complexCalculator.logger;
-
 import java.io.File;
 
 public class DBConnector {
@@ -9,12 +8,10 @@ public class DBConnector {
             File db = new File(LOG_PATH);
             if (db.createNewFile()) {
                 System.out.println("DB created");
-            }
-            else {
+            } else {
                 System.out.println("DB already exists");
             }
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.err.println("Err");
         }
     }

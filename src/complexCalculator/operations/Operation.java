@@ -1,6 +1,6 @@
 package complexCalculator.operations;
 
-import complexCalculator.controller.ComplexNumber;
+import complexCalculator.complexNumberConstructor.ComplexNumber;
 
 public class Operation implements Operatable {
     double a;

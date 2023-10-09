@@ -1,21 +1,49 @@
 package complexCalculator.logger;
-import complexCalculator.decorator.CalculatorDec;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Logger implements Logable {
 
-    String fileName;
+    public final String fileName;
+
     public Logger(String fileName) {
         this.fileName = fileName;
+        try (FileWriter writer = new FileWriter(fileName, true)) {
+            writer.flush();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    @Override
+    public List<String> readAll() {
+        List<String> lines = new ArrayList<>();
+        try {
+            File file = new File(fileName);
+            FileReader fr = new FileReader(file);
+            BufferedReader reader = new BufferedReader(fr);
+            String line = reader.readLine();
+            if (line != null) {
+                lines.add(line);
+            }
+            while (line != null) {
+                line = reader.readLine();
+                if (line != null) {
+                    lines.add(line);
+                }
+            }
+            fr.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return lines;
     }
 
     @Override
     public void write(String message) {
-        List<String> lines = new ArrayList<>();
+        List<String> lines = new ArrayList<>(readAll());
         lines.add(message);
         saveAll(lines);
     }

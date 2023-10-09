@@ -1,6 +1,6 @@
 package complexCalculator.operations;
 
-import complexCalculator.controller.ComplexNumber;
+import complexCalculator.complexNumberConstructor.ComplexNumber;
 
 public interface Operatable {
     ComplexNumber sum(ComplexNumber cx1, ComplexNumber cx2);

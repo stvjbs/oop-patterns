@@ -1,4 +1,4 @@
-package complexCalculator.controller;
+package complexCalculator.complexNumberConstructor;
 
 public class ComplexNumber {
     double a;
@@ -24,17 +24,16 @@ public class ComplexNumber {
                     "+" + b + 'i' +
                     ')';
         }
-        if (b == 1)  {
+        if (b == 1) {
             return "" + '(' + a +
                     "+" + 'i' +
                     ')';
         }
-        if (b == -1){
+        if (b == -1) {
             return "" + '(' + a +
                     "-" + 'i' +
                     ')';
-        }
-        else return "" + '(' + a + b + 'i' +
+        } else return "" + '(' + a + b + 'i' +
                 ')';
     }
 }

@@ -1,5 +1,5 @@
 package complexCalculator.view;
-import complexCalculator.controller.ComplexNumber;
+import complexCalculator.complexNumberConstructor.ComplexNumber;
 import complexCalculator.operations.Operatable;
 import java.util.Scanner;
 
