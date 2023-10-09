@@ -1,7 +1,7 @@
 package complexCalculator.decorator;
 
 import complexCalculator.complexNumberConstructor.ComplexNumber;
-import complexCalculator.logger.Logable;
+import complexCalculator.decorator.logger.Logable;
 import complexCalculator.operations.Operatable;
 import complexCalculator.operations.Operation;
 

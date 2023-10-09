@@ -1,6 +1,8 @@
 package complexCalculator.view;
+
 import complexCalculator.complexNumberConstructor.ComplexNumber;
 import complexCalculator.operations.Operatable;
+
 import java.util.Scanner;
 
 public class ViewCalculator {
@@ -17,7 +19,7 @@ public class ViewCalculator {
 
     public void run() {
 
-        while (oper != 6) {
+        while (oper < 6) {
             System.out.println("\n ============== \n");
             System.out.println("  1 - Summary \n 2 - Subtraction \n 3 - Multiplication \n 4 - Dividing \n 5 - Continue working \n 6- Exit");
             System.out.println("\n ============== \n");
@@ -29,22 +31,22 @@ public class ViewCalculator {
                 case 1:
                     inputingOfNumbers();
                     operation.sum(cx1, cx2);
-                    System.out.printf("Result is - %s ",operation.getResult());
+                    System.out.printf("Result is - %s ", operation.getResult());
                     break;
                 case 2:
                     inputingOfNumbers();
                     operation.subtract(cx1, cx2);
-                    System.out.printf("Result is - %s ",operation.getResult());
+                    System.out.printf("Result is - %s ", operation.getResult());
                     break;
                 case 3:
                     inputingOfNumbers();
                     operation.multiple(cx1, cx2);
-                    System.out.printf("Result is - %s ",operation.getResult());
+                    System.out.printf("Result is - %s ", operation.getResult());
                     break;
                 case 4:
                     inputingOfNumbers();
                     operation.divide(cx1, cx2);
-                    System.out.printf("Result is - %s ",operation.getResult());
+                    System.out.printf("Result is - %s ", operation.getResult());
                     break;
                 case 5:
                     break;

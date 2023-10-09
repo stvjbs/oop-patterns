@@ -1,4 +1,4 @@
-package complexCalculator.logger;
+package complexCalculator.decorator.logger;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -52,9 +52,7 @@ public class Logger implements Logable {
     public void saveAll(List<String> data) {
         try (FileWriter writer = new FileWriter(fileName, false)) {
             for (String line : data) {
-                // запись всей строки
                 writer.write(line);
-                // запись по символам
                 writer.append('\n');
             }
             writer.flush();

@@ -6,6 +6,7 @@ public class Operation implements Operatable {
     double a;
     double b;
     ComplexNumber cxResult;
+
     @Override
     public ComplexNumber getResult() {
         return cxResult;
